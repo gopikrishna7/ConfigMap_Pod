@@ -5,15 +5,15 @@ In this example we are creating ConfigMap with the nginx.conf and then inject th
 
 First we need to create create configMap
 
-kubectl create -f ConfigMap.yaml
+***kubectl create -f ConfigMap.yaml***
 
 then
 
-kubectl cretae -f Pod.yaml
+***kubectl cretae -f Pod.yaml***
 
 expose the pod using the command:
 
-kubectl expose pod myapp --type=LoadBalancer --port=80 --target-port=80
+***kubectl expose pod myapp --type=LoadBalancer --port=80 --target-port=80***
 
 get the external ip of the service:
 
