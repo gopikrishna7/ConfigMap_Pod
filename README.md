@@ -13,7 +13,8 @@ then
 
 expose the pod using the command:
 
-***kubectl expose pod myapp --type=LoadBalancer --port=80 --target-port=80*** (you can expose this using NodePort also by changing the --type=NodePort)
+***kubectl expose pod myapp --type=LoadBalancer --port=80 --target-port=80*** 
+(you can expose this using NodePort also by changing the --type=NodePort)
 
 get the external ip of the service:
 
