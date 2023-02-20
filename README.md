@@ -19,3 +19,12 @@ expose the pod using the command:
 get the external ip of the service:
 
 then hit the : http://external-ip/app ----> it will redirect to the https://google.com as we configured.
+
+
+***----------------------------------------------------------------------------------------------------------------------***
+
+If you have nginx.conf file then you can also create ConfigMap from the file 
+
+***kubectl create configmap <name of configmap> --from-file=/path/to/conf file***
+
+***kubectl create configmap nginx-conf --from-file=nginx.conf***
